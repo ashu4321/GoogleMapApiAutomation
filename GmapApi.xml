@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+   <suite name="GmapApiSuite" >
+	
+	
+	<listeners>
+               <listener class-name="GoogleMapApi.utilities.Listeners"/>
+               <listener class-name="GoogleMapApi.utilities.SparkHTML"/>
+    </listeners>
+
+
+
+
+    <test name="Sanity" enabled="true" preserve-order="true" >
+
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+
+            <class name="GoogleMapApi.TestCases.GoogleMapApiTest"/>
+
+
+
+
+        </classes>
+    </test>
+
+ </suite>
+
+
+
+ 
+ 
